@@ -1,10 +1,16 @@
-// "Fuse ordusuna qoşul!" düyməsinin funksiyası
+// Fuse düyməsi üçün xəbərdarlıq funksiyası
 function joinFuse() {
-    alert("Fuse ordusuna xoş gəlmisən! 💥");
+    alert("Fuse ordusuna xoş gəlmisən! 🚀");
 }
 
-// Formun funksiyası
-document.querySelector('form').addEventListener('submit', function(e) {
-    e.preventDefault();
-    alert("E-poçtun uğurla qəbul edildi! 🚀");
-});
+// Tranzaksiya simulyasiyası
+let holderCount = 150;
+let transactionCount = 0;
+
+// Hər 2 saniyədə yeni tranzaksiya yaransın
+setInterval(() => {
+    transactionCount++;
+    holderCount++;
+    document.getElementById("holderCount").textContent = `Holderlər: ${holderCount}`;
+    document.getElementById("transactionCount").textContent = `Tranzaksiyalar: ${transactionCount}`;
+}, 2000);
