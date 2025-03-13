@@ -1,117 +1,39 @@
-/* Body dizaynı */
-body {
-    font-family: 'Arial', sans-serif;
-    background: #0d0d0d;
-    color: #ffffff;
-    margin: 0;
-    padding: 0;
-    text-align: center;
+/* Sosial media layer */
+.social-layer {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    z-index: 10;
 }
 
-/* Hero bölməsi */
-.hero {
-    background: linear-gradient(135deg, #ff4500, #00ffff);
-    padding: 80px 20px;
-    animation: background-shift 5s infinite alternate;
-}
-
-h1 {
-    font-size: 64px;
+.social-layer a {
+    padding: 10px 15px;
+    background: #00acee;
     color: #fff;
-    text-shadow: 0 0 20px #ff4500;
-    animation: glow 2s infinite alternate;
-}
-
-p {
-    font-size: 18px;
-    margin-top: 10px;
-    opacity: 0.9;
-}
-
-/* Button dizaynı */
-button {
-    background: #ff4500;
-    color: #fff;
-    border: none;
-    padding: 15px 30px;
-    font-size: 18px;
     border-radius: 5px;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    cursor: pointer;
-    box-shadow: 0 0 10px #ff4500;
+    font-weight: bold;
+    text-decoration: none;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
-button:hover {
+/* Telegram rəngi */
+.social-layer a:first-child {
+    background: #0088cc;
+}
+
+/* Hover effekti */
+.social-layer a:hover {
     transform: scale(1.1);
-    box-shadow: 0 0 20px #00ffff;
+    box-shadow: 0 0 15px #00ffff;
 }
 
-/* Bölmələrin dizaynı */
-section {
-    margin: 30px auto;
-    padding: 20px;
-    width: 80%;
-    border-radius: 10px;
-    background: rgba(0, 0, 0, 0.8);
-    box-shadow: 0 0 20px #ff4500;
-    transition: transform 0.3s ease;
-}
-
-section:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 0 30px #00ffff;
-}
-
-/* Form sahəsi */
-input {
-    padding: 10px;
-    width: 60%;
-    border: none;
-    border-radius: 5px;
-    margin-right: 10px;
-}
-
-/* Animasiya effektləri */
-@keyframes glow {
-    from {
-        text-shadow: 0 0 10px #ff4500, 0 0 20px #ff6347;
-    }
-    to {
-        text-shadow: 0 0 20px #00ffff, 0 0 30px #00ffff;
-    }
-}
-
-@keyframes background-shift {
-    from {
-        background: linear-gradient(135deg, #ff4500, #00ffff);
-    }
-    to {
-        background: linear-gradient(135deg, #00ffff, #ff4500);
-    }
-}
-
-/* Mobil versiya uyğunluğu */
+/* Mobil üçün daha kiçik variant */
 @media (max-width: 600px) {
-    h1 {
-        font-size: 40px;
-    }
-
-    p {
-        font-size: 16px;
-    }
-
-    button {
-        padding: 10px 20px;
-        font-size: 16px;
-    }
-
-    section {
-        width: 95%;
-        padding: 10px;
-    }
-
-    input {
-        width: 80%;
-        margin-bottom: 10px;
+    .social-layer a {
+        padding: 8px 12px;
+        font-size: 14px;
     }
 }
