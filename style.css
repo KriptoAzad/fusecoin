@@ -1,90 +1,69 @@
-/* Bədən stili */
+/* Ümumi stil */
 body {
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background: #111;
-    color: #fff;
+    background-color: #0d1117;
+    color: #e6edf3;
     text-align: center;
 }
 
 /* Hero bölməsi */
 .hero {
     padding: 50px;
+    background: linear-gradient(45deg, #1f2a38, #2e3e50);
 }
 
-/* Fuse üçün xüsusi yazı forması */
+.hero h1 {
+    font-size: 4rem;
+    margin-bottom: 10px;
+}
+
+/* Xüsusi Fuse yazısı */
 .fuse-text {
-    font-size: 60px;
+    font-size: 5rem;
     font-weight: bold;
-    text-transform: uppercase;
-    background: linear-gradient(45deg, #FF5F6D, #FFC371, #00d9ff);
+    background: linear-gradient(90deg, #ff00ff, #00ffff, #ff00ff);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    text-shadow: 0 0 20px rgba(255, 95, 109, 0.8), 0 0 30px rgba(0, 217, 255, 0.8);
-    animation: flicker 1.5s infinite alternate;
+    animation: glow 2s infinite alternate;
 }
 
-/* Yazının yanıb-sönmə effekti */
-@keyframes flicker {
-    0% { text-shadow: 0 0 10px rgba(255, 95, 109, 0.8), 0 0 20px rgba(0, 217, 255, 0.8); }
-    100% { text-shadow: 0 0 25px rgba(255, 95, 109, 1), 0 0 40px rgba(0, 217, 255, 1); }
+/* Neon effekt */
+@keyframes glow {
+    from { text-shadow: 0 0 10px #ff00ff, 0 0 20px #00ffff; }
+    to { text-shadow: 0 0 20px #ff00ff, 0 0 30px #00ffff; }
 }
 
 /* Bölmələr */
 section {
     padding: 20px;
+    margin: 20px 0;
 }
 
-/* Form və button stilləri */
-input[type="email"] {
-    padding: 10px;
-    width: 250px;
-    margin-top: 10px;
-    border: none;
-    border-radius: 5px;
-}
-
-button {
-    padding: 10px 20px;
-    background: #FF5F6D;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-/* Sosial media linkləri */
+/* Sosial linklər */
 .social-layer a {
-    color: #00d9ff;
-    font-size: 20px;
-    margin: 10px;
-    display: inline-block;
+    margin: 0 10px;
+    color: #00ffff;
     text-decoration: none;
-    transition: 0.3s ease;
 }
 
 .social-layer a:hover {
-    color: #FFC371;
-    transform: scale(1.1);
+    color: #ff00ff;
 }
 
-/* Mobil dostu dizayn */
-@media (max-width: 600px) {
-    .fuse-text {
-        font-size: 40px;
-    }
+/* Button stili */
+button {
+    padding: 10px 20px;
+    background-color: #00ffff;
+    color: #0d1117;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
 
-    input[type="email"] {
-        width: 200px;
-    }
-
-    button {
-        padding: 8px 15px;
-    }
-
-    .social-layer a {
-        font-size: 16px;
-    }
+button:hover {
+    background-color: #ff00ff;
 }
