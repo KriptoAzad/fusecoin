@@ -1,39 +1,85 @@
+/* Səhifə üçün əsas stil */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: linear-gradient(135deg, #1e1e2f, #3a3a56);
+    color: #fff;
+    text-align: center;
+}
+
+/* Hero bölməsi */
+.hero {
+    padding: 50px 20px;
+    background: linear-gradient(135deg, #FF5F6D, #FFC371);
+    border-bottom: 5px solid #FF3F4E;
+}
+
+.hero h1 {
+    font-size: 60px;
+    margin-bottom: 10px;
+    letter-spacing: 2px;
+}
+
+.hero p {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+/* Button stili */
+button {
+    padding: 10px 20px;
+    background-color: #FF3F4E;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #FF1E32;
+    transform: scale(1.05);
+}
+
+/* Bölmələr üçün stil */
+section {
+    padding: 20px;
+    margin: 10px 0;
+    background: #2C2C44;
+    border-radius: 8px;
+    box-shadow: 0 0 15px #000;
+}
+
 /* Sosial media layer */
 .social-layer {
-    position: fixed;
-    bottom: 10px;
-    right: 10px;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    z-index: 10;
+    margin-top: 20px;
 }
 
 .social-layer a {
-    padding: 10px 15px;
-    background: #00acee;
-    color: #fff;
-    border-radius: 5px;
-    font-weight: bold;
+    color: #FF5F6D;
+    margin: 0 10px;
     text-decoration: none;
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    font-weight: bold;
 }
 
-/* Telegram rəngi */
-.social-layer a:first-child {
-    background: #0088cc;
-}
-
-/* Hover effekti */
 .social-layer a:hover {
-    transform: scale(1.1);
-    box-shadow: 0 0 15px #00ffff;
+    color: #FFC371;
 }
 
-/* Mobil üçün daha kiçik variant */
+/* Mobil uyğunluq */
 @media (max-width: 600px) {
-    .social-layer a {
-        padding: 8px 12px;
+    .hero h1 {
+        font-size: 40px;
+    }
+
+    button {
+        padding: 8px 15px;
         font-size: 14px;
+    }
+
+    section {
+        padding: 15px;
     }
 }
