@@ -3,7 +3,7 @@ function joinFuse() {
     alert("Fuse ordusuna xoş gəlmisən! 💥");
 }
 
-// Formun funksiyası (süni olaraq)
+// Formun funksiyası
 document.querySelector('form').addEventListener('submit', function(e) {
     e.preventDefault();
     alert("E-poçtun uğurla qəbul edildi! 🚀");
