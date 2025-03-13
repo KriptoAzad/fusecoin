@@ -84,3 +84,21 @@ section {
         padding: 15px;
     }
 }
+/* Fuse üçün xüsusi yazı forması */
+.fuse-text {
+    font-family: 'Arial', sans-serif;
+    font-size: 60px;
+    font-weight: bold;
+    text-transform: uppercase;
+    background: linear-gradient(45deg, #FF5F6D, #FFC371, #00d9ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 0 0 20px rgba(255, 95, 109, 0.8), 0 0 30px rgba(0, 217, 255, 0.8);
+    animation: flicker 1.5s infinite alternate;
+}
+
+/* Yazının yanıb-sönmə effekti */
+@keyframes flicker {
+    0% { text-shadow: 0 0 10px rgba(255, 95, 109, 0.8), 0 0 20px rgba(0, 217, 255, 0.8); }
+    100% { text-shadow: 0 0 25px rgba(255, 95, 109, 1), 0 0 40px rgba(0, 217, 255, 1); }
+}
