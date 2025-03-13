@@ -1,92 +1,21 @@
-/* Səhifənin ümumi fon və yazı stili */
+/* Bədən stili */
 body {
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background: linear-gradient(135deg, #121212, #3a3a3a);
+    background: #111;
     color: #fff;
     text-align: center;
 }
 
 /* Hero bölməsi */
 .hero {
-    padding: 50px 20px;
-    background: linear-gradient(135deg, #FF5F6D, #FFC371);
-    border-bottom: 5px solid #FF3F4E;
+    padding: 50px;
 }
 
-.hero h1 {
-    font-size: 60px;
-    margin-bottom: 10px;
-    letter-spacing: 2px;
-}
-
-.hero p {
-    font-size: 20px;
-    margin-bottom: 20px;
-}
-
-/* Düymə stili */
-button {
-    padding: 10px 20px;
-    background-color: #FF3F4E;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 16px;
-    transition: transform 0.2s;
-}
-
-button:hover {
-    background-color: #FF1E32;
-    transform: scale(1.05);
-}
-
-/* Bölmələr üçün stil */
-section {
-    padding: 20px;
-    margin: 10px 0;
-    background: #2C2C44;
-    border-radius: 8px;
-    box-shadow: 0 0 15px #000;
-}
-
-/* Sosial media linkləri */
-.social-layer {
-    margin-top: 20px;
-}
-
-.social-layer a {
-    color: #FF5F6D;
-    margin: 0 10px;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-.social-layer a:hover {
-    color: #FFC371;
-}
-
-/* Mobil uyğunluq */
-@media (max-width: 600px) {
-    .hero h1 {
-        font-size: 40px;
-    }
-
-    button {
-        padding: 8px 15px;
-        font-size: 14px;
-    }
-
-    section {
-        padding: 15px;
-    }
-}
 /* Fuse üçün xüsusi yazı forması */
 .fuse-text {
-    font-family: 'Arial', sans-serif;
     font-size: 60px;
     font-weight: bold;
     text-transform: uppercase;
@@ -101,4 +30,61 @@ section {
 @keyframes flicker {
     0% { text-shadow: 0 0 10px rgba(255, 95, 109, 0.8), 0 0 20px rgba(0, 217, 255, 0.8); }
     100% { text-shadow: 0 0 25px rgba(255, 95, 109, 1), 0 0 40px rgba(0, 217, 255, 1); }
+}
+
+/* Bölmələr */
+section {
+    padding: 20px;
+}
+
+/* Form və button stilləri */
+input[type="email"] {
+    padding: 10px;
+    width: 250px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px 20px;
+    background: #FF5F6D;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Sosial media linkləri */
+.social-layer a {
+    color: #00d9ff;
+    font-size: 20px;
+    margin: 10px;
+    display: inline-block;
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+
+.social-layer a:hover {
+    color: #FFC371;
+    transform: scale(1.1);
+}
+
+/* Mobil dostu dizayn */
+@media (max-width: 600px) {
+    .fuse-text {
+        font-size: 40px;
+    }
+
+    input[type="email"] {
+        width: 200px;
+    }
+
+    button {
+        padding: 8px 15px;
+    }
+
+    .social-layer a {
+        font-size: 16px;
+    }
 }
