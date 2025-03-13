@@ -1,10 +1,10 @@
-// Simple button function
+// Qoşulma düyməsi üçün alert
 function joinFuse() {
-    alert("Welcome to the Fuse Army! 🚀");
+    alert("Fuse ordusuna xoş gəldin! 🚀");
 }
 
-// Form submission alert
+// Forma qoşulma alerti
 document.querySelector("form").addEventListener("submit", (e) => {
     e.preventDefault();
-    alert("You're now part of the Fuse Army! 🎉");
+    alert("Sən artıq Fuse ordusunun bir parçasısan! 🎉");
 });
